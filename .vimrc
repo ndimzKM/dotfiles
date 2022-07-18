@@ -65,3 +65,9 @@ inoremap [ []<Esc>ha
 inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
+
+" Experimenting with VimScript
+map - dd
+map <space> viw
+imap <c-d> <esc>ddi
+imap <c-u> <esc>~

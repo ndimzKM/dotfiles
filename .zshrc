@@ -134,6 +134,9 @@ export PATH="$HOME/Dev-envs:$PATH"
 export PATH="$HOME/lua-5.4.4/src:$PATH"
 #export PATH"$HOME/usr/local/go/bin:$PATH"
 
+# Set vim alias
+alias vim=nvim
+
 # Android Studio
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
