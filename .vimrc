@@ -5,7 +5,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set backspace=indent,eol,start
-" Important!!
+" Important!
 if has('termguicolors')
     set termguicolors
 endif
