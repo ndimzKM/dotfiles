@@ -69,6 +69,8 @@ nnoremap <silent> <C-g> :GFiles<CR>
 " other key mappings
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
+nmap + <C-a>
+nmap - <C-X>
 map fs :VimFiler<Return>
 map s<left> <C-w>h
 map s<up> <C-w>k
@@ -82,7 +84,6 @@ inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
 
 " Experimenting with VimScript
-map - dd
 map <space> viw
 imap <c-d> <esc>ddi
 imap <c-u> <esc>~
