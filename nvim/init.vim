@@ -10,16 +10,27 @@ set guicursor=n-v-c-sm:block
 if has('termguicolors')
     set termguicolors
 endif
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_foreground = 'material'
-autocmd vimenter * ++nested colorscheme gruvbox-material
+" let g:gruvbox_material_background = 'hard'
+" let g:gruvbox_material_foreground = 'material'
+" autocmd vimenter * ++nested colorscheme gruvbox-material
 " autocmd vimenter * ++nested colorscheme gruvbox
-" autocmd vimenter * ++nested colorscheme nord
+let g:tokyonight_style = 'storm'
+autocmd vimenter * ++nested colorscheme tokyonight
 " colorscheme nord
-"Make nvim transparent
-au ColorScheme * hi Normal ctermbg=none guibg=none
-au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
-"end
+"
+" true color
+" if exists("&termguicolors") && exists("&winblend")
+"   syntax enable
+"   set termguicolors
+"   set winblend=0
+"   set wildoptions=pum
+"   set pumblend=5
+"   set background=dark
+"   " Use NeoSolarized
+"   let g:neosolarized_termtrans=1
+"   runtime ./colors/NeoSolarized.vim
+"   colorscheme NeoSolarized
+" endif
 
 set number
 set t_Co=256
@@ -38,7 +49,7 @@ set wildignore+=*/node_modules/*
 
 "Prettier Setup
 let g:neoformat_try_node_exe = 1
-"autocmd BufWritePre *.js|*.ts|*.jsx|*.tsx Neoformat
+" autocmd BufWritePre *.js|*.ts|*.jsx|*.tsx Neoformat
 
 call plug#begin()
 
@@ -56,9 +67,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'vim-airline/vim-airline'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 call plug#end()
 
